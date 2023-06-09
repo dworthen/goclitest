@@ -13,6 +13,7 @@ permissions:
 jobs:
   release:
     runs-on: ubuntu-latest
+    if: ${{ github.repository == 'dworthen/goclitest' }}
     steps:
       - uses: actions/checkout@v3
         with:
