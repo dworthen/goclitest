@@ -6,6 +6,6 @@ package main
 import "github.com/dworthen/gog4gclitest/cmd"
 
 func main() {
-	// simple change
+	// simple change2
 	cmd.Execute()
 }
