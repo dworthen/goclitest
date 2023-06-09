@@ -5,12 +5,12 @@ version: "3"
 tasks:
   build:
     cmds:
-      - goreleaser build --single-target --snapshot --clean
+      - goreleaser build --single-target --snapshot
 
   build-all:
     cmds:
-      - goreleaser build --snapshot --clean
+      - goreleaser build --clean
 
   release:
     cmds:
-      - goreleaser release
+      - goreleaser release --clean
