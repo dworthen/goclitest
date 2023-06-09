@@ -1,0 +1,16 @@
+# https://taskfile.dev
+
+version: "3"
+
+tasks:
+  build:
+    cmds:
+      - goreleaser build --single-target --snapshot --clean
+
+  build-all:
+    cmds:
+      - goreleaser build --snapshot --clean
+
+  release:
+    cmds:
+      - goreleaser release
